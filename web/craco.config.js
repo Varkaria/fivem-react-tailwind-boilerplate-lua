@@ -1,4 +1,6 @@
 const path = require("path");
+const CracoSwcPlugin = require('craco-swc');
+
 module.exports = {
   webpack: {
     configure: (webpackConfig) => {
@@ -20,5 +22,7 @@ module.exports = {
     }
 
     return devServerConfig
-  }
+  },
+
+  plugins: [{ plugin: CracoSwcPlugin }],
 }
