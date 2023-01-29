@@ -10,16 +10,15 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.18",
-    "@unocss/preset-mini": "^0.48.5",
-    "@unocss/vite": "^0.48.5",
+    "autoprefixer": "^10.4.13",
     "concurrently": "^7.6.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.9.4",
     "vite": "^4.0.4",
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
     "solid-js": "^1.6.9"
   }
 }
