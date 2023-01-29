@@ -1,15 +1,14 @@
-import React from 'react';
-import './index.css';
-import App from './components/App';
-import { VisibilityProvider } from './providers/VisibilityProvider';
-import { createRoot } from 'react-dom/client';
+import "uno.css";
+import { render } from "solid-js/web";
 
-const root = createRoot(document.getElementById('root')!);
+import App from "./app";
+import { VisibilityProvider } from "./providers/VisibilityProvider";
 
-root.render(
-  <React.StrictMode>
+render(
+  () => (
     <VisibilityProvider>
       <App />
     </VisibilityProvider>
-  </React.StrictMode>
+  ),
+  document.getElementById("root") as HTMLElement
 );
