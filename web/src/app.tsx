@@ -10,7 +10,7 @@ const App: Component = () => {
     },
   ]);
   useNuiEvent("lamo", () => {});
-  return <p class="text-4xl text-green-700 text-center py-20">Testing</p>;
+  return <p class="text-4xl text-green-700 text-center py-20">It Worked!!!</p>;
 };
 
 export default App;
